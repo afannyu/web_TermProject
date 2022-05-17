@@ -1,0 +1,495 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.div {
+  width: 100%;
+}
+
+/* 设置g-index的宽度 */
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.g-index{
+  width: 80%
+}
+
+/* 头部 */
+.m-hd {
+  display: flex;
+  margin-top: 20px;
+  
+}
+
+/* 将日历与标语并排 */
+.date_come {
+  display: flex;
+}
+
+/* 设置日历和标语边框 字体大小等 */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 3px;
+  padding: 5px;
+  border: 1px solid #0000009e;
+}
+
+.box> div {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.box> div:nth-child(2) {
+  margin: 5px 0;
+  height: .5px;
+  background-color: #0000009e;
+  transform-origin: 50% 100%;
+}
+
+.box> div:nth-child(3) {
+  font-size: 13px;
+}
+
+/* 将大作业字样居中 */
+.m-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  font-weight: bold;
+  transform: translateX(-80%);
+}
+
+.m-logo> span:first-child {
+  font-size: 46px;
+}
+
+.m-logo> span:nth-child(2) {
+  font-size: 19px;
+}
+
+/* 日历 */
+.split {
+  margin: 0 26px;
+  width: 1px;
+  background-color: #0000009e;
+  transform-origin: 100% 50%;
+  transform: rotate(29deg)
+}
+
+div> li {
+  font-size: 16px;
+  flex: 1;
+}
+
+.day {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.date> div> li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 虚线 */
+.m-border {
+  margin: 20px 0;
+  border-top:2px dashed #0000009e;
+  height: 1px;
+  overflow:hidden;
+}
+
+/* 菜单 */
+.m-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.m-menu> a {
+  font-size: 20px;
+}
+
+/* 菜单鼠标hover效果 */
+.m-menu> a:hover {
+  color: red;
+}
+
+.sel {
+  color: red;
+}
+
+/* 搜索 */
+.m-search {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  width: 30%;
+  border: 1px solid #0000009e;
+}
+
+.m-search:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* 将icon与搜索文字分开 */
+.m-search> div:nth-child(2) {
+  flex: 1;
+}
+
+/* 搜索字样 */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 搜索细线 */
+.search> li:nth-child(1) {
+  width: 40px;
+  border-bottom: 1px solid #0000009e;
+  transform: rotate(90deg);
+}
+
+/* 搜索框 */
+.m-search> input {
+  width: 70%;
+  height: 28px;
+  background: none;
+  outline: none;
+  border: none; 
+}
+
+/* 粗分割线 */
+.m-border2 {
+  margin: 8px 0;
+  border-bottom: 3px solid #000;
+}
+
+.m-border3 {
+  margin-top: -5px;
+  border-top:2px dashed #0000009e;
+  height: 1px;
+  overflow:hidden;
+}
+
+/* 切换菜单红色方块 */
+.block {
+  width: 40px;
+  height: 6px;
+  background: white;
+}
+
+.alert> ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ael {
+  background: red;
+}
+
+ul> div {
+  width: 30.6%;
+}
+
+/* 实时股价 */
+.m-move {
+  display: flex;
+  margin: 10px 0;
+  height: 40px;
+  border: 1px solid #000;
+}
+
+.nomove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #000;
+  height: 100%;
+  width: 10%;
+}
+
+.nomove> li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 处理股市数据 */
+#marquee1 {
+  overflow: hidden;
+  width: 90%;
+}
+
+#marquee1> div {
+  width: 3000px;
+}
+
+.price> a {
+  margin-right: 10px;
+  font-size: 15px;
+  color: black;
+}
+
+.price {
+  float: left;
+  margin: 10px auto;
+  margin-right: 10px;
+}
+
+.price:hover {
+  font-weight: bold;
+}
+
+/* 红 绿 股价变化 */
+.green> a {
+  color: green;
+}
+
+.price> a:nth-child(1) {
+  font-size: 17px;
+  color: #000;
+}
+
+.red> a {
+  color: red;
+}
+
+/* 正文 占整体宽度 80% */
+.m-lunbo {
+  display: flex;
+}
+
+.m-left {
+  width: 62%;
+}
+
+.m-right {
+  width: 38%;
+}
+
+/* 轮播图 */
+.pic_items,
+.pic_item,
+.pic_item> p {
+  width: 100%;
+  height: 100%;
+}
+
+.pic_item> p> img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 设置图片效果 */
+.lunbo {
+  height: 400px;
+}
+
+.m-content {
+  position: relative;
+  height: 400px;
+}
+
+.pic_item {
+  position: absolute;
+  opacity: 0;
+  transform: all 1s;
+}
+
+.pic_item.active {
+  opacity: 1;
+}
+
+/* 处理向左向右按钮 */
+.btn {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 80px;
+  font-size: 30px;
+  line-height: 70px;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  z-index: 10;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.btn> li {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-rt {
+  right: 0;
+}
+
+/* 鼠标划入轮播图区域 显示向左向右图标 */
+.lunbo:hover .btn {
+  opacity: 1;
+}
+
+/* 处理小圆点 */
+.circles {
+  display: flex;
+  position: absolute;
+  height: 20px;
+  bottom: 10px;
+  right: 43%;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: rgba(0,0,0,0.4);
+  cursor: pointer;
+  margin: 5px;
+}
+
+.white {
+  background: #fff;
+}
+
+/* 抗击疫情 */
+.m-kangji {
+  margin-top: 20px;
+}
+
+.ka-content {
+  display: flex;
+}
+
+.ka-content> div:nth-child(2) {
+  flex: 1;
+}
+
+.ka-mo,
+.ka-lt> li:nth-child(2){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ka-lt> li:nth-child(1) {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.ka-lt> li:nth-child(2)> a {
+  font-size: 17px;
+  color: white;
+}
+
+.ka-lt> li:nth-child(2) {
+  height: 100%;
+  width: 140px;
+  background-color: #d81e06;
+  border-radius: 100px 0 100px 0;
+}
+
+.ka-rt:hover {
+  font-weight: bold;
+}
+
+.ka-border {
+  margin-top: 10px;
+  border-bottom: 1px solid #000;
+}
+
+/* 天行数据接口内容 */
+.m-epidemic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.m-epidemic> div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.epi-list {
+  display: flex;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.m-epidemic> div:nth-child(1) {
+  margin-top: 20px;
+}
+
+.epi-list> div:nth-child(2) {
+  flex: 1;
+}
+
+.epi-pic {
+  width: 27%;
+}
+
+.epi-pic> img {
+  width: 100%;
+}
+
+.epi-content {
+  width: 70%;
+}
+
+.epi-title {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.epi-title:hover> a {
+  color: red;
+}
+
+.epi-news {
+  margin-top: 16px;
+  line-height: 26px;
+}
+
+.epi-bottom {
+  display: flex;
+  margin-top: 10px;
+}
+
+.epi-bottom> li {
+  color: gray;
+  font-size: 13px;
+}
+
+.epi_border {
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(224 224 224);
+  width: 100%;
+}
+
